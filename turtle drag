@@ -26,10 +26,14 @@ def clickleft(x,y):
 def clickright(x,y):
     tiki.stamp()
 
+def clickmiddle(x,y):
+    tiki.clear()
+
 
 turtle.listen()
 turtle.onscreenclick (clickleft, 1)
 turtle.onscreenclick (clickright, 3)
+turtle.onscreenclick (clickmiddle, 2)
 
 
 
