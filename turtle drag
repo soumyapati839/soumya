@@ -1,0 +1,41 @@
+import turtle
+import random
+tiki=turtle.Turtle()
+tiki.speed(0)
+tiki.width(5)
+colors=["red","yellow","blue","green"]
+
+def up():
+    tiki.setheading(90)
+    tiki.forward(100)
+def left():
+    tiki.setheading(180)
+    tiki.forward(100)
+
+def right():
+    tiki.setheading(0)
+    tiki.forward(100)
+
+def down():
+    tiki.setheading(270)
+    tiki.forward(100)
+
+def clickleft(x,y):
+    tiki.color(random.choice(colors))
+    
+def clickright(x,y):
+    tiki.stamp()
+
+
+turtle.listen()
+turtle.onscreenclick (clickleft, 1)
+turtle.onscreenclick (clickright, 3)
+
+
+
+turtle.onkey(up,"Up")
+turtle.onkey(down,"Down")
+turtle.onkey(left,"Left")
+turtle.onkey(right,"Right")
+
+turtle.mainloop()
