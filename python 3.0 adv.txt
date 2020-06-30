@@ -1,0 +1,346 @@
+1. Differences between Python and Others[C, C++ and JAVA]:
+-----------------------------------------------------------
+1. Python is very simple Programming language when compared with C, C++
+and JAVA:
+------------------------------------------------------------------------
+---------
+1. Simple Syntaxes in Python
+2. Readability is good in Python
+3. Less no of Instructions in Python
+4. Easy to write programs and easy to execute applications.
+5. Not required to specify data types explicitly in python.
+6. Less Error prone programming language.
+
+
+2. C and C++ are static Programming Languages but JAVA and Python are
+Dynamic Programming Languages:
+------------------------------------------------------------------------
+C and C++ are allocating memory for the data at compilation time, so
+that, C and C++ are Static programming languages.
+JAVA is able to allow memory allocation for the data at runtime , so
+that, JAVA is dynamic programming Language.
+In case of Python, no sperate process for compilation and execution, in
+Python every thing is goiung on at runtime only including memory
+allocation, so that, Python is bydefault Dynamic Programming Language.
+
+
+3. Pre-Processor is required in C and C++, but, Pre-Processor is not
+required in Java and Python:
+------------------------------------------------------------------------
+In C and C++, Preprocessing activities are required like evaluating
+#include<> statements, #define statements,... so Pre-processor is
+required in C and C++.
+In JAVA and Python , Pre-Processing activities are not existed , so
+that, Pre-Processor is not required in Java and Python.
+
+
+4. C and C++ are Platform Dependent programming Languages , but, JAVA
+and Python are platform Independent Programming Language:
+------------------------------------------------------------------------
+-
+C and C++ are platform dependent programming Languages , because, C and
+C++ allows their applications to perform compilation and execution on
+the same Operating System.
+Java is a platform Independent Programming language, because, JAVA
+allows its applications to perform compilation is on one Operating
+System and execution is on another Operating System.
+Note: Java is a platform Independent Programming Language because of
+JVMs only, but, JVM is platform dependent.
+Python is a Platform Independent Programming Language, because, Python
+allows its applications to run under all the Operating Systems like
+Windows, Linux, Unix, Solaries,..... with out having modifications.
+Note: Python is a platform Independent Programming Language because of
+PVMs only, but, PVM is platform dependent tool, not only PVM, the
+complete Python Software is platform Dependent.
+
+
+5. C is Procedure Oriented Progreamming Language, C++ and Java are
+Object Oriented Programming languages , but, Python is both Procedure
+oriented and Object Oriented Programming language:
+------------------------------------------------------------------------
+----------
+C is a procedure oriented programming language, because, C programming
+language is using function/Procedure orented features like Functions,
+Lambdas,......
+C++ and Java are Object Oriented Programming languages, because, C++ and
+Java are following Object Oriented features like Class, Object,
+Cncapsulation, Abstraction, Inheritance, Polymorphism,.......
+Python is both Procedure Oriented and Object Oriented Programming
+Language, because, Python is following Procedure oriented features like
+Functions, Lambdas, Filters, map, reduce,..... and Object Oriented
+Features like class, object, encapsulation, abstraction, Inheritance,
+Polymorphism,.....
+
+
+6. C, C++ and Java are statically Typed programming Languages, but,
+Python is dynamically Typed Programming Language:
+Python is dynamically Typed Programming Language:
+------------------------------------------------------------------------
+---------
+If we represent Data as per the types in any Programming Languiage then
+that Programming Language is called as Typed Programming language.
+C, C++ and Java are Statically Typed Programming Languages, because, in
+C, C++ and Java applications before representing data first we must
+confirm which type of data we are representing.
+EX:
+1. int i = 10; ---> Valid
+2. int i;
+ i = 10; ---> Valid
+3. i = 10; --> Invalid
+Python is dynamically Typed Programming Language, because, in python
+applications , data types will be confirmed internally after providing
+data, not before providing data.
+EX:
+i = 10;
+print(type(i)) ---> int
+EX:
+f = 22.22
+type(f) ----> float
+
+
+7. C++ is using Destructors to destroy objects, Java is using Garbage
+Collector to destroy objects, but, Python is using both Destructors
+methods and Garbage Collector to destroy objects:
+------------------------------------------------------------------------
+-----------
+In general, In Object Oriented Programming Languages , it is convention
+to represent data in the form of Objects as per Object Oriented
+features. In Object Oriented Programming Languages, to create objects we
+will use "Constructors" and to destroy objects we will use
+"Destructors".
+In C++ , there is no Garbage Collector kind of component to destroy
+objects , so that, in C++ applications, developers must destroy objects
+explicitly, to destroy objects explicitly developers must use
+"Destructors" feature in C++.
+In Java, developers are not responsible to destroy objects, because,
+JAVA has an implicit component in the form of "Garbage Collector" to
+destroy objects, so that, Destructors are not required in java.
+In Python, Both Destructor method and and Garbage Collector are existed
+to destroy objects. In general, we will use destructors methods for
+explicit object destruction and Python will use Garbage Collector for
+implicit Objects destruction.
+Note: In Python applications, we will use destructor methods to include
+a set of instructions inorder to execute while destroying objects.
+
+
+8.C++ and Python are allowing Multiple Inheritance, but, JAVA is not
+allowing Multiple Inheritance:
+------------------------------------------------------------------------
+--------
+I h it it i l ti b t l it ill id i bl
+Inheritance: it is a relation between classes, it will provide variables
+and functions from one class[parent Class/Base Class/Super class] to
+another class[ Chaild class / Derived Class/ Sub class] inorder to
+improve Code Reusability.
+The main advantage of Inheritance is "Code Reusability".
+Initially, there are two types of Inheritances.
+1. Single Inheritance
+2. Multiple Inheritance
+By combining single and multiple inheritances three more inheritances
+are defined.
+3. Multi Level Inheritance
+4. Hierarchical Inheritance
+5. Hybrid Inheritance.
+1. Single Inheritance:
+-----------------------
+It is a relation between classes, it will bring variables and methods
+from only one super class to one or more no of sub classes.
+2. Multiple Inheritance
+------------------------
+It is a relation between classes, it will bring variables and methods
+from more than one super class to one or more no of sub classes.
+In Java, multiple inheritance is not possible , because, in Java
+applications if we declare more than one variable with the same name and
+with different values, more than one method with the same name and with
+the different implementations in more than one super class and if we
+access that variable and method in the respective sub class then which
+super class vasriable and which super class method will be executed is a
+confusion state, but, JAVA is a simple programming language, it is not
+allowing multiple inheritance in its programming.
+In Python, Multiple Inheritance is allowed, because, Python is following
+a protocol called as MRO[Method Resolution Order] , it has provided
+solution for the confusion of Multiple Iheritance , as per MRO, if we
+access any super class member in the respective sub class then PVM will
+search for the respective member in all the super classes as per the
+order in which we specified in sub class declaration.
+EX:
+---
+class A():
+ def m1():
+ ---X-impl--
+class B():
+ def m1():
+ --Y-impl---
+class C(A,B):
+ ---
+c = C()
+c.m1() # X-impl
+class D(B,A):
+ -----
+d = D()
+d.m1() # Y-impl
+
+
+9. Pointers are exited in C ande C++ , but, Pointers are not existed in
+Java and Python:
+------------------------------------------------------------------------
+----------
+Pointer is a variable, it able to store address locations of the data
+structers, where data structers may be a variable, an array, a struct,
+another pointer variable.
+In general, pointers are recognized and initilized at the time of
+compilation.
+
+
+Q)Why pointers are not existed in Java and Python?
+-------------------------------------------------------
+Ans:
+----
+1. Pointer variables required static memory allocation, but, JAVA and
+Python are following dynamic memory allocation.
+2. Pointer variables are supported by Static Programming Languages, but,
+Java and Python are dynamic Programming Languages.
+3. Pointers are very much suitable in Platform Dependent Programming
+languages, but, Java and Python are platform Independent Programming
+Languages.
+4. Pointer variables are able to provide less security for the data,
+but, JAVA and Python are very good Secure programming languages, they
+must provide very good security for the applications data.
+5. Pointers is a bit confusion oriented feature, but, JAVA and Python
+are simple programming lnaguages , they must not provide confusion to
+the developers.
+
+
+Q)What are the differences between pointer variables, Reference
+variables and Id variables?
+------------------------------------------------------------------------
+---------
+Ans:
+----
+1. Pointer variables are existed in C and C++.
+ Reference variables are existed in Java.
+ Id variables[Reference Variables] are existed in Python.
+2. Pointer variables are able to refer a block of memory by storing its
+address location.
+ Reference variables are able to store a block of memory[Object] by
+storing Object reference value, where Object reference value is an
+hexa decimal of Hashcode, where hashcode is an unique identity
+for each and every object provided Heap manager in the form of an
+integer value. 
+ In Python, Id variables are able to refer a block of memory [Object]
+by storing Object id value, where Object Id value is an unique
+identity provided by Memory Manager in the form of an integer value.
+3. Pointer variables required static memory allocations.
+ Reference variables and Id variables required dynamic memory
+allocation.
+4. Pointer variables are recognized and initialized at compilation time.
+ Reference variables and Id variables are recognized and initialized
+at runtime.
+
+
+10. C a C++ are following call by value and Call by Reference, but, Java
+and Python are following Call By value only:
+------------------------------------------------------------------------
+-----------
+In any Programming Language, if we pass primitive data like byte, short,
+int, long,float, double.... as parameters to the methods or functions
+then the parameter passing mechanism is "Call by Value".
+In any Programming Language, if we pass address locations as parameters
+to the methods or functions then the parameter passing mechanism is
+"call By Reference".
+In C and C++, if we pass pointer variables as parameters to the methods
+or functions then the parameter passing mechanism is "Call By
+Reference", because, Pointer variables are able to store address
+locations.
+In Java and Python, if we pass Object reference value or Object Id value
+as parameters to the methods or functions then the parameter passing
+mechanism is "Call by Value " only, not "Call By Reference", because, in
+JAVA, Object reference value is not address location and in Python
+Object Id value is not address location.
+
+
+11. C and C++ are compilative Programming Languages, Python is an
+interpretive programming language, but, JAVA is both Compilative and
+Interpretive programming language :
+------------------------------------------------------------------------
+----------
+C and C++ are Compilative Programming languages, because, in C and C++
+applications majority of the operations like Memory allocations are
+going on at compilation time only.
+Python is an interpretive programming language, becasue, in Python
+applications every operation is going on at runtime only, that is by
+using an interpreter.
+Java is both Compilative and interpretive programming language, because,
+in Java applications to check developers mistakes and to convert program
+from High level representations to low level representations we need
+compilation and to execute java programs we need an interpretor inside
+JVM.
+
+
+12. Operator overloading is possible in C++ and Python, but, Operator
+Overloading is not possibe in JAVA:
+------------------------------------------------------------------------
+----------
+The process of defining an operator with more than one operation or
+functionality is called as Operator Overloading.
+Operator Overloading is an implementation for Polymorphism.
+The main advantage of Polymorphism is "Flexibility" to develop
+applications.
+EX:
+a = 10
+b = 20
+c = a + b // + is used for Arithmetic Addition
+print(c)// OP: 30
+str1 = "abc"
+str2 = "def"
+str3 = str1 + str2 // + is used for String concatination
+print(str3)// OP: abcdef
+In C++, operator overloading is possible by defining functions
+explicitly.
+In JAVA, some of the predefined operators are declared as overloaded
+operators with fixed functionalities, but, JAVA has not provided any
+option to perform operator overloading explicitly at developers level.
+In Python, we are able to get Operator overloading implicitly and
+explictly, we are able to provide operator overloading by defining some
+magic functions.
+
+
+13. Java is more portable than Python:
+---------------------------------------
+Java is more portable programming language, because, JAVA is able to
+provide very good environment to prepare the applications like
+Standalone applications, Web Applications, Diustributed applications,
+Mobile Based Applications,..... and JAVA applications will take less
+execution time and performance of the Java applications is more.
+Python is less portable programming langiuage, because, it is not
+suitable in mobile application development and its applications will
+take more execution time and performance of Python applications is very
+less.
+
+
+14. C , C++ and Java are following proper structer to prepare
+applications, but , Python is not following proper structer to prepare
+applications:
+------------------------------------------------------------------------
+----------
+C is a Procedure Oriented Programming language, it has follow procedure
+orientation style[Structer] to prepare application.
+1. Macros
+2. #define
+3. #include
+4. Global Variables
+5. Structs
+6. User defined Functions
+7. Main Function
+C++ and Java are Object Oriented Programming Langiuages, they will
+follow Object Orientation style or Structer to prepare applications.
+1. Comment Section
+2. Package Section
+3. Import Section
+4. Classes/interfaces Section
+5. Main Class Section.
+
+Python is both Procedure Oriented and Object Oriented programming
+language, it will not follow any structer to prepare applications, it
+includes both Procedure oriented elements and Object Oriented elements
+in any direction.
